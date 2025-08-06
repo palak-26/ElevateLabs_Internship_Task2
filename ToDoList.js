@@ -2,6 +2,13 @@ let input = document.getElementById('input');
 let add = document.querySelector('button');
 let tasks = document.querySelector('ol');
 let div = document.querySelector('#div')
+let date = document.querySelectorAll('.div')
+
+let d = new Date().toDateString();
+
+date.forEach(task => {
+  task.innerHTML = d;
+});
 
 add.addEventListener('click',()=>{
      let task
@@ -36,6 +43,9 @@ add.addEventListener('click',()=>{
         if(checkbox.checked){
             task.className = 'line-through';
            
+        }
+        else{
+            task.className = 'none';
         }
     })
 
