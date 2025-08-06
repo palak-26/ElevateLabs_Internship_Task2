@@ -34,6 +34,10 @@ add.addEventListener('click',()=>{
     Remove.innerHTML='Remove';
 
     Remove.className = 'bg-black text-white rounded-md p-1 flex items-center   '
+
+    Remove.addEventListener('click',()=>{
+        li.remove()
+    })
  
     li.appendChild(Remove);
     li.className =  'flex w-80 justify-between m-4 '
