@@ -54,5 +54,4 @@ add.addEventListener('click',()=>{
     })
 
     tasks.appendChild(li);
-    // div.className= 'visible'
 })
